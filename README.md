@@ -1,21 +1,21 @@
-# ⚡ Human Benchmark Reaction Time Bot
+#  Human Benchmark Reaction Time Bot
 
 A small Python bot that automatically plays the [Human Benchmark reaction time test](https://www.humanbenchmark.com/tests/reactiontime).
 
 The script opens the page and watches the color of one pixel on the screen. As soon as the background turns green, it clicks after a small random delay (50–87 ms) so the result looks human.
 
-> ⚠️ Made for learning and fun (automation, reading pixels). Please don't use it to cheat on leaderboards.
+>  Made for learning and fun (automation, reading pixels). Please don't use it to cheat on leaderboards.
 
 ---
 
-## 📋 Requirements
+##  Requirements
 
 - **Python 3.8 or newer**: [python.org/downloads](https://www.python.org/downloads/)
   - On Windows, check **"Add Python to PATH"** during installation.
 - A web browser
 - Ideally a **1920×1080** screen (see [Limitations](#-limitations))
 
-## 📦 Dependencies
+##  Dependencies
 
 | Package | Purpose |
 |---|---|
@@ -34,7 +34,7 @@ sudo apt install python3-tk python3-dev scrot
 
 ---
 
-## 🚀 Installation
+##  Installation
 
 1. **Get the project**
 
@@ -65,7 +65,7 @@ sudo apt install python3-tk python3-dev scrot
 
 ---
 
-## 🎮 How to use
+##  How to use
 
 1. Close unnecessary windows and put your browser on your **primary monitor**.
 2. Run the script:
@@ -81,13 +81,13 @@ sudo apt install python3-tk python3-dev scrot
 
 The terminal shows your screen resolution and the colors the bot detects, which helps with debugging.
 
-### 🛑 Emergency stop
+###  Emergency stop
 
 Move the mouse to the **top-left corner of the screen** to trigger PyAutoGUI's *FailSafe*, which stops the script. You can also press **Ctrl + C** in the terminal.
 
 ---
 
-## ⚙️ Settings
+##  Settings
 
 Open `ReactionTime.py` and edit:
 
@@ -99,7 +99,7 @@ Open `ReactionTime.py` and edit:
 
 ---
 
-## ❓ Troubleshooting
+##  Troubleshooting
 
 **"Game not detected!" message**
 The pixel the bot reads isn't the game's blue (`#2b87d1`). Make sure that:
@@ -122,12 +122,12 @@ Try `py ReactionTime.py`, or reinstall Python with "Add Python to PATH" checked.
 
 ---
 
-## ⚠️ Limitations
+##  Limitations
 
 - Positions and colors are tuned for **1920×1080**. The bot may not work at other resolutions.
 - The script reads a single pixel (horizontal center, upper quarter of the screen).
 - If the site changes its colors, you'll need to update the hex codes in the script.
 
-## 📄 License
+##  License
 
 Released under the MIT License. Feel free to use and modify it.
